@@ -1,8 +1,10 @@
 #Example usage of Norwegian lookup data
 
-To use this lookup data in an [agate](github.com/onyxfish/agate) analysis/script 
+This example combines a table of municipalities who have introduced property tax, and does a lookup for the municipality name using the municipality id (kommunenr) as key.
 
-## Usage:
+See `example.py` for this implementation
 
-`pip install -r requirements.txt`
-`python example.py`
+## Usage
+
+* `pip install -r requirements.txt`
+* `python example.py`
