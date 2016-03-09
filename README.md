@@ -6,6 +6,10 @@ Anyone may contribute a lookup table by sending a pull request to this repositor
 
 This work is inspired and partly copied from the original [lookup service](https://github.com/wireservice/lookup)
 
+###Lookup tables available: 
+
+* `kommunenr` - Let's you find the corresponding municipality name (kommune) to the municipality id (kommunenr)
+
 ## Structure of files
 
 Each folder is a key that can be used for a lookup. Within that folder are CSV files. The name of the CSV file is the name of the value that it maps to. The CSV itself will contain two columns, one with the key and another with the value. For example, `kommunenr/kommune.csv` contains a CSV file that looks like this:
@@ -19,17 +23,6 @@ kommunenr,kommune
 ...
 ```
 
-Sometimes the mapping from a key to value varies over time. For example, NAICS codes change every five years. In this case, a version specifier may be included in the filename. For example, `naics/description.2007.csv` is the 2007 version of the code mapping and `naics/description/2012.csv` is the 2012 version.
-
-It may also be useful to be able to map two keys to a single value. For example, you might want to look up population by state *and* year. In those cases key folders can be nested and the CSV can contain more than one key column. For example, `usps/year/population.csv` contains a CSV that looks like this:
-
-```
-usps,year,state
-AL,2015,4858979
-AL,2014,4846411
-AL,2013,4830533
-...
-```
 
 ## Metadata format
 
