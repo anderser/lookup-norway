@@ -8,6 +8,6 @@ columns:
   kommunenr:
     name: Municipality id with leading zero
     type: Text
-  state:
+  kommune:
     name: Municipality name
     type: Text
