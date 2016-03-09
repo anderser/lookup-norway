@@ -14,7 +14,7 @@ taxfields = agate.data_types.TypeTester(force={
 
 propertytax_table = agate.Table.from_csv('data/ssb_eiendomsskatt_2015.csv', column_types=taxfields)
 
-norway_lookup_source = agatelookup.source.Source(root='http://something.github.com')
+norway_lookup_source = agatelookup.source.Source(root='http://anderser.github.io/lookup-norway/')
 
 joined = propertytax_table.lookup('kommunenr', 'has_propertytax', lookup_key='kommunenr',
 	source=norway_lookup_source)
