@@ -1,0 +1,13 @@
+data: Norwegian municipality numbers (kommunenummer) and corresponding municipality name
+version: 2013
+sources:
+  - SSB, http://hotell.difi.no/?dataset=ssb/regioner/kommuner
+contributors:
+  - Anders G. Eriksen <anders.grimsrud.eriksen@gmail.com>
+columns:
+  kommunenr:
+    name: Municipality id with leading zero
+    type: Text
+  state:
+    name: Municipality name
+    type: Text
