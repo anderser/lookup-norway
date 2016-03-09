@@ -16,6 +16,6 @@ propertytax_table = agate.Table.from_csv('data/ssb_eiendomsskatt_2015.csv', colu
 
 norway_lookup_source = agatelookup.source.Source(root='http://anderser.github.io/lookup-norway', cache="~/lookup-norway")
 
-joined = propertytax_table.lookup('kommunenr', 'kommune', source=norway_lookup_source)
+joined_tables = propertytax_table.lookup('kommunenr', 'kommune', source=norway_lookup_source)
 
-print join.print_table(max_rows=10)
+print joined_tables.print_table(max_rows=10)
