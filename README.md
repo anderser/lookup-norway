@@ -10,6 +10,9 @@ This work is inspired and partly copied from the original [lookup service](https
 
 * `kommunenr` - Let's you find the corresponding municipality name (kommune) to the municipality id (kommunenr)
 
+
+See the `example` folder for example usage of this table.
+
 ## Structure of files
 
 Each folder is a key that can be used for a lookup. Within that folder are CSV files. The name of the CSV file is the name of the value that it maps to. The CSV itself will contain two columns, one with the key and another with the value. For example, `kommunenr/kommune.csv` contains a CSV file that looks like this:
